@@ -124,7 +124,7 @@ let leadingSlashRE = /^\/+/
 
 function joinURL(base: string, url: string): string {
   return (
-    base.replace(trailingSlashRE, '') + '/' + url.replace(leadingSlashRE, '')
+    base.replace(trailingSlashRE, '') + url.replace(leadingSlashRE, '')
   )
 }
 
